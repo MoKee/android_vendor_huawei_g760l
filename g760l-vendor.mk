@@ -136,6 +136,11 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g760l/proprietary/lib/libSmartAE.so:system/lib/libSmartAE.so \
     vendor/huawei/g760l/proprietary/lib/libtrack.so:system/lib/libtrack.so \
     vendor/huawei/g760l/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
+    vendor/huawei/g760l/proprietary/vendor/firmware/keymaster/keymaster.b00:system/vendor/firmware/keymaster/keymaster.b00 \
+    vendor/huawei/g760l/proprietary/vendor/firmware/keymaster/keymaster.b01:system/vendor/firmware/keymaster/keymaster.b01 \
+    vendor/huawei/g760l/proprietary/vendor/firmware/keymaster/keymaster.b02:system/vendor/firmware/keymaster/keymaster.b02 \
+    vendor/huawei/g760l/proprietary/vendor/firmware/keymaster/keymaster.b03:system/vendor/firmware/keymaster/keymaster.b03 \
+    vendor/huawei/g760l/proprietary/vendor/firmware/keymaster/keymaster.mdt:system/vendor/firmware/keymaster/keymaster.mdt \
     vendor/huawei/g760l/proprietary/vendor/firmware/libpn547_fw.so:system/vendor/firmware/libpn547_fw.so \
     vendor/huawei/g760l/proprietary/vendor/lib/drm/libdrmwvmplugin.so:system/vendor/lib/drm/libdrmwvmplugin.so \
     vendor/huawei/g760l/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
