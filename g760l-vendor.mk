@@ -95,6 +95,11 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g760l/proprietary/etc/firmware/wcnss.b08:system/etc/firmware/wcnss.b08 \
     vendor/huawei/g760l/proprietary/etc/firmware/wcnss.b09:system/etc/firmware/wcnss.b09 \
     vendor/huawei/g760l/proprietary/etc/firmware/wcnss.mdt:system/etc/firmware/wcnss.mdt \
+    vendor/huawei/g760l/proprietary/etc/firmware/widevine.b00:system/etc/firmware/widevine.b00 \
+    vendor/huawei/g760l/proprietary/etc/firmware/widevine.b01:system/etc/firmware/widevine.b01 \
+    vendor/huawei/g760l/proprietary/etc/firmware/widevine.b02:system/etc/firmware/widevine.b02 \
+    vendor/huawei/g760l/proprietary/etc/firmware/widevine.b03:system/etc/firmware/widevine.b03 \
+    vendor/huawei/g760l/proprietary/etc/firmware/widevine.mdt:system/etc/firmware/widevine.mdt \
     vendor/huawei/g760l/proprietary/etc/ons.bin:system/etc/ons.bin \
     vendor/huawei/g760l/proprietary/etc/sound_param/g760/Bluetooth_cal.acdb:system/etc/sound_param/g760/Bluetooth_cal.acdb \
     vendor/huawei/g760l/proprietary/etc/sound_param/g760/General_cal.acdb:system/etc/sound_param/g760/General_cal.acdb \
