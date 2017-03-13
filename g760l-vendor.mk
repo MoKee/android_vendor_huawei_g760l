@@ -17,6 +17,7 @@
 PRODUCT_COPY_FILES += \
     vendor/huawei/g760l/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/huawei/g760l/proprietary/bin/btnvtool:system/bin/btnvtool \
+    vendor/huawei/g760l/proprietary/bin/charger_monitor:system/bin/charger_monitor \
     vendor/huawei/g760l/proprietary/bin/gsiff_daemon:system/bin/gsiff_daemon \
     vendor/huawei/g760l/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
     vendor/huawei/g760l/proprietary/bin/hvdcp:system/bin/hvdcp \
@@ -112,10 +113,12 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g760l/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/huawei/g760l/proprietary/lib/imedia_filters.so:system/lib/imedia_filters.so \
     vendor/huawei/g760l/proprietary/lib/libBestShot.so:system/lib/libBestShot.so \
+    vendor/huawei/g760l/proprietary/lib/libFaceDetection.so:system/lib/libFaceDetection.so \
+    vendor/huawei/g760l/proprietary/lib/libRefocusContrastPosition.so:system/lib/libRefocusContrastPosition.so \
+    vendor/huawei/g760l/proprietary/lib/libSmartAE.so:system/lib/libSmartAE.so \
     vendor/huawei/g760l/proprietary/lib/libbtpower.so:system/lib/libbtpower.so \
     vendor/huawei/g760l/proprietary/lib/libcamera_post_mediaserver.so:system/lib/libcamera_post_mediaserver.so \
     vendor/huawei/g760l/proprietary/lib/libexif.so:system/lib/libexif.so \
-    vendor/huawei/g760l/proprietary/lib/libFaceDetection.so:system/lib/libFaceDetection.so \
     vendor/huawei/g760l/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
     vendor/huawei/g760l/proprietary/lib/libhdr.so:system/lib/libhdr.so \
     vendor/huawei/g760l/proprietary/lib/libloc_api_v02.so:system/lib/libloc_api_v02.so \
@@ -123,9 +126,9 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g760l/proprietary/lib/libloc_ds_api.so:system/lib/libloc_ds_api.so \
     vendor/huawei/g760l/proprietary/lib/libloc_eng.so:system/lib/libloc_eng.so \
     vendor/huawei/g760l/proprietary/lib/libmdmdetect.so:system/lib/libmdmdetect.so \
+    vendor/huawei/g760l/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/huawei/g760l/proprietary/lib/libmmcamera_interface.so:system/lib/libmmcamera_interface.so \
     vendor/huawei/g760l/proprietary/lib/libmmjpeg_interface.so:system/lib/libmmjpeg_interface.so \
-    vendor/huawei/g760l/proprietary/lib/libmm-qcamera.so:system/lib/libmm-qcamera.so \
     vendor/huawei/g760l/proprietary/lib/libmrc_cg_filters.so:system/lib/libmrc_cg_filters.so \
     vendor/huawei/g760l/proprietary/lib/libmrc_cg_mfdenoise.so:system/lib/libmrc_cg_mfdenoise.so \
     vendor/huawei/g760l/proprietary/lib/libmrc_cg_myFilter.so:system/lib/libmrc_cg_myFilter.so \
@@ -136,8 +139,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g760l/proprietary/lib/liboeminfo.so:system/lib/liboeminfo.so \
     vendor/huawei/g760l/proprietary/lib/libposthdr.so:system/lib/libposthdr.so \
     vendor/huawei/g760l/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
-    vendor/huawei/g760l/proprietary/lib/libRefocusContrastPosition.so:system/lib/libRefocusContrastPosition.so \
-    vendor/huawei/g760l/proprietary/lib/libSmartAE.so:system/lib/libSmartAE.so \
     vendor/huawei/g760l/proprietary/lib/libtrack.so:system/lib/libtrack.so \
     vendor/huawei/g760l/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/huawei/g760l/proprietary/vendor/firmware/keymaster/keymaster.b00:system/vendor/firmware/keymaster/keymaster.b00 \
@@ -154,18 +155,31 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g760l/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
     vendor/huawei/g760l/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
     vendor/huawei/g760l/proprietary/vendor/lib/hw/sensors.msm8226.so:system/vendor/lib/hw/sensors.msm8226.so \
+    vendor/huawei/g760l/proprietary/vendor/lib/libAKM8975.so:system/vendor/lib/libAKM8975.so \
+    vendor/huawei/g760l/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
+    vendor/huawei/g760l/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
+    vendor/huawei/g760l/proprietary/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
+    vendor/huawei/g760l/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
+    vendor/huawei/g760l/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
+    vendor/huawei/g760l/proprietary/vendor/lib/libOmxAmrwbplusDec.so:system/vendor/lib/libOmxAmrwbplusDec.so \
+    vendor/huawei/g760l/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
+    vendor/huawei/g760l/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
+    vendor/huawei/g760l/proprietary/vendor/lib/libOmxWmaDec.so:system/vendor/lib/libOmxWmaDec.so \
+    vendor/huawei/g760l/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
+    vendor/huawei/g760l/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
+    vendor/huawei/g760l/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
+    vendor/huawei/g760l/proprietary/vendor/lib/libSHIMDivxDrm.so:system/vendor/lib/libSHIMDivxDrm.so \
+    vendor/huawei/g760l/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
+    vendor/huawei/g760l/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libacdbloader.so:system/vendor/lib/libacdbloader.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libacdbrtac.so:system/vendor/lib/libacdbrtac.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libadiertac.so:system/vendor/lib/libadiertac.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libadreno_utils.so:system/vendor/lib/libadreno_utils.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libadsprpc.so:system/vendor/lib/libadsprpc.so \
-    vendor/huawei/g760l/proprietary/vendor/lib/libAKM8975.so:system/vendor/lib/libAKM8975.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libaudcal.so:system/vendor/lib/libaudcal.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libbccQTI.so:system/vendor/lib/libbccQTI.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libbtnv.so:system/vendor/lib/libbtnv.so \
-    vendor/huawei/g760l/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libc2d30-a3xx.so:system/vendor/lib/libc2d30-a3xx.so \
-    vendor/huawei/g760l/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_imx135_liteon_common.so:system/vendor/lib/libchromatix_hw_imx135_liteon_common.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_imx135_liteon_default_video.so:system/vendor/lib/libchromatix_hw_imx135_liteon_default_video.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_imx135_liteon_hfr_120.so:system/vendor/lib/libchromatix_hw_imx135_liteon_hfr_120.so \
@@ -175,32 +189,31 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_imx135_liteon_video_hd.so:system/vendor/lib/libchromatix_hw_imx135_liteon_video_hd.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_imx214_foxconn_common.so:system/vendor/lib/libchromatix_hw_imx214_foxconn_common.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_imx214_foxconn_preview.so:system/vendor/lib/libchromatix_hw_imx214_foxconn_preview.so \
-    vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_imx214_foxconn_snapshot_10m.so:system/vendor/lib/libchromatix_hw_imx214_foxconn_snapshot_10m.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_imx214_foxconn_snapshot.so:system/vendor/lib/libchromatix_hw_imx214_foxconn_snapshot.so \
+    vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_imx214_foxconn_snapshot_10m.so:system/vendor/lib/libchromatix_hw_imx214_foxconn_snapshot_10m.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_imx214_foxconn_video.so:system/vendor/lib/libchromatix_hw_imx214_foxconn_video.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_imx214_sunny_common.so:system/vendor/lib/libchromatix_hw_imx214_sunny_common.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_imx214_sunny_preview.so:system/vendor/lib/libchromatix_hw_imx214_sunny_preview.so \
-    vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_imx214_sunny_snapshot_10m.so:system/vendor/lib/libchromatix_hw_imx214_sunny_snapshot_10m.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_imx214_sunny_snapshot.so:system/vendor/lib/libchromatix_hw_imx214_sunny_snapshot.so \
+    vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_imx214_sunny_snapshot_10m.so:system/vendor/lib/libchromatix_hw_imx214_sunny_snapshot_10m.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_imx214_sunny_video.so:system/vendor/lib/libchromatix_hw_imx214_sunny_video.so \
-    vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_ov5648_foxconn_common_mate2.so:system/vendor/lib/libchromatix_hw_ov5648_foxconn_common_mate2.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_ov5648_foxconn_common.so:system/vendor/lib/libchromatix_hw_ov5648_foxconn_common.so \
-    vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_ov5648_foxconn_default_video_mate2.so:system/vendor/lib/libchromatix_hw_ov5648_foxconn_default_video_mate2.so \
+    vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_ov5648_foxconn_common_mate2.so:system/vendor/lib/libchromatix_hw_ov5648_foxconn_common_mate2.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_ov5648_foxconn_default_video.so:system/vendor/lib/libchromatix_hw_ov5648_foxconn_default_video.so \
-    vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_ov5648_foxconn_preview_mate2.so:system/vendor/lib/libchromatix_hw_ov5648_foxconn_preview_mate2.so \
+    vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_ov5648_foxconn_default_video_mate2.so:system/vendor/lib/libchromatix_hw_ov5648_foxconn_default_video_mate2.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_ov5648_foxconn_preview.so:system/vendor/lib/libchromatix_hw_ov5648_foxconn_preview.so \
+    vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_ov5648_foxconn_preview_mate2.so:system/vendor/lib/libchromatix_hw_ov5648_foxconn_preview_mate2.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_ov5648_foxconn_snapshot.so:system/vendor/lib/libchromatix_hw_ov5648_foxconn_snapshot.so \
-    vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_s5k4e1_sunny_common_mate2.so:system/vendor/lib/libchromatix_hw_s5k4e1_sunny_common_mate2.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_s5k4e1_sunny_common.so:system/vendor/lib/libchromatix_hw_s5k4e1_sunny_common.so \
-    vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_s5k4e1_sunny_default_video_mate2.so:system/vendor/lib/libchromatix_hw_s5k4e1_sunny_default_video_mate2.so \
+    vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_s5k4e1_sunny_common_mate2.so:system/vendor/lib/libchromatix_hw_s5k4e1_sunny_common_mate2.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_s5k4e1_sunny_default_video.so:system/vendor/lib/libchromatix_hw_s5k4e1_sunny_default_video.so \
+    vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_s5k4e1_sunny_default_video_mate2.so:system/vendor/lib/libchromatix_hw_s5k4e1_sunny_default_video_mate2.so \
+    vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_s5k4e1_sunny_preview.so:system/vendor/lib/libchromatix_hw_s5k4e1_sunny_preview.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_s5k4e1_sunny_preview_3.8m.so:system/vendor/lib/libchromatix_hw_s5k4e1_sunny_preview_3.8m.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_s5k4e1_sunny_preview_mate2.so:system/vendor/lib/libchromatix_hw_s5k4e1_sunny_preview_mate2.so \
-    vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_s5k4e1_sunny_preview.so:system/vendor/lib/libchromatix_hw_s5k4e1_sunny_preview.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libchromatix_hw_s5k4e1_sunny_snapshot_mate2.so:system/vendor/lib/libchromatix_hw_s5k4e1_sunny_snapshot_mate2.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
-    vendor/huawei/g760l/proprietary/vendor/lib/libDivxDrm.so:system/vendor/lib/libDivxDrm.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libdrmdiag.so:system/vendor/lib/libdrmdiag.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
@@ -211,7 +224,6 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g760l/proprietary/vendor/lib/libfastcvopt.so:system/vendor/lib/libfastcvopt.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
-    vendor/huawei/g760l/proprietary/vendor/lib/libI420colorconvert.so:system/vendor/lib/libI420colorconvert.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
@@ -219,6 +231,7 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g760l/proprietary/vendor/lib/liblbs_core.so:system/vendor/lib/liblbs_core.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libllvm-qcom.so:system/vendor/lib/libllvm-qcom.so \
     vendor/huawei/g760l/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
+    vendor/huawei/g760l/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libmmcamera2_c2d_module.so:system/vendor/lib/libmmcamera2_c2d_module.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libmmcamera2_cpp_module.so:system/vendor/lib/libmmcamera2_cpp_module.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libmmcamera2_iface_modules.so:system/vendor/lib/libmmcamera2_iface_modules.so \
@@ -244,24 +257,18 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g760l/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libmmcamera_tuning.so:system/vendor/lib/libmmcamera_tuning.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libmmcamera_wavelet_lib.so:system/vendor/lib/libmmcamera_wavelet_lib.so \
-    vendor/huawei/g760l/proprietary/vendor/lib/libmm-color-convertor.so:system/vendor/lib/libmm-color-convertor.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libmmqjpeg_codec.so:system/vendor/lib/libmmqjpeg_codec.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libnetmgr.so:system/vendor/lib/libnetmgr.so \
     vendor/huawei/g760l/proprietary/vendor/lib/liboemcamera.so:system/vendor/lib/liboemcamera.so \
-    vendor/huawei/g760l/proprietary/vendor/lib/libOmxAacDec.so:system/vendor/lib/libOmxAacDec.so \
-    vendor/huawei/g760l/proprietary/vendor/lib/libOmxAmrwbplusDec.so:system/vendor/lib/libOmxAmrwbplusDec.so \
-    vendor/huawei/g760l/proprietary/vendor/lib/libOmxEvrcDec.so:system/vendor/lib/libOmxEvrcDec.so \
-    vendor/huawei/g760l/proprietary/vendor/lib/libOmxQcelp13Dec.so:system/vendor/lib/libOmxQcelp13Dec.so \
-    vendor/huawei/g760l/proprietary/vendor/lib/libOmxWmaDec.so:system/vendor/lib/libOmxWmaDec.so \
-    vendor/huawei/g760l/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libperipheral_client.so:system/vendor/lib/libperipheral_client.so \
+    vendor/huawei/g760l/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libqcamerasvr-c++.so:system/vendor/lib/libqcamerasvr-c++.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libqcci_legacy.so:system/vendor/lib/libqcci_legacy.so \
-    vendor/huawei/g760l/proprietary/vendor/lib/libqc-opt.so:system/vendor/lib/libqc-opt.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libqdi.so:system/vendor/lib/libqdi.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libqdp.so:system/vendor/lib/libqdp.so \
+    vendor/huawei/g760l/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libqmi_cci.so:system/vendor/lib/libqmi_cci.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libqmi_client_helper.so:system/vendor/lib/libqmi_client_helper.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libqmi_client_qmux.so:system/vendor/lib/libqmi_client_qmux.so \
@@ -269,37 +276,31 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g760l/proprietary/vendor/lib/libqmi_csi.so:system/vendor/lib/libqmi_csi.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libqmi_csvt_srvc.so:system/vendor/lib/libqmi_csvt_srvc.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libqmi_encdec.so:system/vendor/lib/libqmi_encdec.so \
-    vendor/huawei/g760l/proprietary/vendor/lib/libqmiservices_ext.so:system/vendor/lib/libqmiservices_ext.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libqmiservices.so:system/vendor/lib/libqmiservices.so \
-    vendor/huawei/g760l/proprietary/vendor/lib/libqmi.so:system/vendor/lib/libqmi.so \
+    vendor/huawei/g760l/proprietary/vendor/lib/libqmiservices_ext.so:system/vendor/lib/libqmiservices_ext.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libqomx_jpegdec.so:system/vendor/lib/libqomx_jpegdec.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
-    vendor/huawei/g760l/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libquipc_ulp_adapter.so:system/vendor/lib/libquipc_ulp_adapter.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/huawei/g760l/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
-    vendor/huawei/g760l/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     vendor/huawei/g760l/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
-    vendor/huawei/g760l/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
+    vendor/huawei/g760l/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libsensor1.so:system/vendor/lib/libsensor1.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libsensor_reg.so:system/vendor/lib/libsensor_reg.so \
-    vendor/huawei/g760l/proprietary/vendor/lib/libSHIMDivxDrm.so:system/vendor/lib/libSHIMDivxDrm.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so \
-    vendor/huawei/g760l/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libuiblur.so:system/vendor/lib/libuiblur.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libwvdrm_L1.so:system/vendor/lib/libwvdrm_L1.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
-    vendor/huawei/g760l/proprietary/vendor/lib/libWVStreamControlAPI_L1.so:system/vendor/lib/libWVStreamControlAPI_L1.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
     vendor/huawei/g760l/proprietary/vendor/lib/libxtwifi_ulp_adaptor.so:system/vendor/lib/libxtwifi_ulp_adaptor.so \
     vendor/huawei/g760l/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
@@ -308,8 +309,8 @@ PRODUCT_COPY_FILES += \
     vendor/huawei/g760l/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so
 
 PRODUCT_PACKAGES += \
-    qcrilmsgtunnel \
     TimeService \
+    qcrilmsgtunnel \
     com.qualcomm.location \
     qcnvitems \
     qcrilhook
